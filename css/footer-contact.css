@@ -1,0 +1,120 @@
+body ¨{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #E3EDEF;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer h2 {
+    font-family:  sans-serif;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.footer-content p {
+    display: flex;
+    margin-top: 0;
+    align-items: start;
+}
+
+.footer .social-media {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;   
+}
+
+.footer .social-media .social-media-content {
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+}
+
+.footer .social-media span{
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.footer .social-media a {
+    margin:  0 5px;
+    display: inline-block;  
+}
+
+.footer .social-media img {
+    width: 15px;
+    height: 15px;
+}
+
+.footer .social-media p {
+    color: #565252;
+}
+
+.footer .footer-links {
+    margin-top: 10px;
+}
+
+.footer .footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 1s;
+}
+
+.footer .footer-links a:hover {
+    text-decoration: underline;    
+}
+
+/* El boton que hemos añadido para enseñar/ocultar info */
+
+#toggleInfoBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#toggleInfoBtn:hover {
+    background-color: #565252;
+}
+
+#additionalInfo {
+    margin-top: 10px;
+    display: none;
+}
+
+
+@media (max-width: 375px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+    }
+
+    .footer p, .footer .footer-links a {
+        font-size: 12px;
+    }
+
+    .footer .social-media span {
+        font-size: 12px;
+    }
+
+}
+
+
