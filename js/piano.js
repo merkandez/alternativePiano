@@ -95,6 +95,7 @@ playBtn.addEventListener('mousedown', () => {
   }
 });
 
+//Creación del teclado teclas blancas y negras con 2 bucles
 let init = () => {
   for (let i = 1; i <= 5; i++) {
     for (let j = 0; j < 7; j++) {
@@ -114,6 +115,7 @@ let init = () => {
   }
 };
 
+// Creación del nombre de las teclas
 let createKey = (type, note, octave) => {
   let key = document.createElement('button');
   key.className = `piano_key piano_key--${type}`;
@@ -124,6 +126,8 @@ let createKey = (type, note, octave) => {
   /* type === 'white' ? `${note}${octave}` : `${note}s${octave}`; */
   key.textContent = key.dataset.letterNote;
   keys.push(key);
+
+  //Hacemos que al pulsar la tecla ésta tome una clase que haga que tenga un background azul según la clase "piano_key--playing" del CSS y que la pierda cuando dejemos de pulsar la tecla.
 
   key.addEventListener('mousedown', () => {
     playSound(key);
@@ -195,6 +199,7 @@ let pressKey = (mouseEvent, e) => {
   }
 };
 
+//Damos a cada tecla un sonido que para cuando dejamos de pulsarla
 let playSound = (key) => {
   let audio = document.createElement('audio');
   audio.src = '../sounds/' + key.dataset.letterNoteFileName + '.mp3';
