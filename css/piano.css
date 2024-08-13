@@ -25,15 +25,15 @@ body {
   justify-content: space-around;
 }
 .piano_speaker {
-  width: 300px;
+  width: 250px;
   height: 150px;
   border-radius: 15px;
-  background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0,
-    radial-gradient(circle closest-side, #ffffff 53%, rgba(255, 255, 255, 0) 0)
-      0 0,
-    radial-gradient(circle closest-side, #ffffff 50%, rgba(255, 255, 255, 0) 0)
-      55px 0 #48b;
-  background-size: 100px 200px;
+background: linear-gradient(315deg, transparent 75%, #000000 0)-16px 0,
+      linear-gradient(45deg, transparent 75%, #000000 0) 16px 0,
+      linear-gradient(135deg, #333 50%, transparent 0) 0 0,
+      linear-gradient(45deg, #4d4d4d 50%, #666 0) 0 0 #666;
+background-size: 32px 32px;
+
 }
 .piano_interface {
   width: 500px;
@@ -51,7 +51,7 @@ select {
 }
 .piano_keyboard {
   width: 100%;
-  height: 300px;
+  height: 500px;
   background-color: #000;
   display: flex;
 }
@@ -75,12 +75,12 @@ select {
   top: 0;
   left: -15px;
 }
-.space{
+.space {
   position: relative;
 }
 .piano_key--white {
   padding-top: 180px;
 }
-.piano_key--playing{
+.piano_key--playing {
   background-color: aqua;
 }
