@@ -1,7 +1,7 @@
-# Piano Project
+# Alternative Piano
 
 A raiz del proyecto propuesto por Factoría F5 titulado "Factoría de sonidos", que realicé con algunos de mis compañeros y que consistía en hacer una página web de una escuela online de música orientada a niños, con un enfocada especialmente en el piano, me propuse por sugerencia de una amiga que toca precisamente este instrumento, realizar un piano un poco más completo
- de al menos 5 octavas.
+de al menos 5 octavas.
 Este proyecto es una simulación de un piano digital interactivo, desarrollado con HTML, CSS y JavaScript. Permite a los usuarios tocar notas musicales utilizando el teclado del ordenador o haciendo clic en las teclas del piano en la interfaz gráfica. Además, incluye una función de reproducción automática de canciones predefinidas.
 
 ## Características
