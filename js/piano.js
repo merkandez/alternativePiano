@@ -199,7 +199,7 @@ let pressKey = (mouseEvent, e) => {
   }
 };
 
-//Damos a cada tecla un sonido que para cuando dejamos de pulsarla
+//Damos a cada tecla un sonido que para cuando dejamos de pulsarla.
 let playSound = (key) => {
   let audio = document.createElement('audio');
   audio.src = '../sounds/' + key.dataset.letterNoteFileName + '.mp3';
